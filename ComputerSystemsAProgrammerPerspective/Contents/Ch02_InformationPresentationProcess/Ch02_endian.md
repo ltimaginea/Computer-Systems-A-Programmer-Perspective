@@ -12,6 +12,8 @@
 
 术语“小端”和“大端”表示多字节值的哪一端（小端或大端）存储在该值的起始地址。
 
+大多数 Intel 兼容机都只用小端模式。另一方面，IBM 和 Oracle 的大多数机器则是按大端模式操作。
+
 在下图中，我们标明内存地址增长的方向为从左到右。我们还标明**最高有效位**（Most Significant Bit，MSB）是这个32位值最左边一位，**最低有效位**（Least Significant Bit，LSB）是这个32位值最右边一位。 **最高有效字节**（Most Significant Byte）是 Byte3=0x01，**最低有效字节**（Least Significant Byte）是 Byte0=0x67 。
 
 
