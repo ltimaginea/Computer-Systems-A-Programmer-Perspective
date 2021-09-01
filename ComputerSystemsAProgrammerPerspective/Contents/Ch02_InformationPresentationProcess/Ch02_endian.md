@@ -8,11 +8,11 @@
 
 ## 字节顺序
 
-最低有效字节存储在起始地址，这称为**小端（Little Endian）**字节序；最高有效字节存储在起始地址，这称为**大端（Big Endian）**字节序。
+最低有效字节存储在起始地址，这称为**小端**（Little Endian）字节序；最高有效字节存储在起始地址，这称为**大端**（Big Endian）字节序。
 
 术语“小端”和“大端”表示多字节值的哪一端（小端或大端）存储在该值的起始地址。
 
-在下图中，我们标明内存地址增长的方向为从左到右。我们还标明**最高有效位（Most Significant Bit，MSB）**是这个32位值最左边一位，**最低有效位（Least Significant Bit，LSB）**是这个32位值最右边一位。 **最高有效字节（Most Significant Byte）**是 Byte3=0x01，**最低有效字节（Least Significant Byte）**是 Byte0=0x67 。
+在下图中，我们标明内存地址增长的方向为从左到右。我们还标明**最高有效位**（Most Significant Bit，MSB）是这个32位值最左边一位，**最低有效位**（Least Significant Bit，LSB）是这个32位值最右边一位。 **最高有效字节**（Most Significant Byte）是 Byte3=0x01，**最低有效字节**（Least Significant Byte）是 Byte0=0x67 。
 
 
 
@@ -40,8 +40,8 @@ uint16_t ntohs(uint16_t netshort);
 
 
 ```cpp
-// These  functions convert the byte encoding of integer values from the byte order that 
-// the current CPU (the "host") uses, to and from little-endian and big-endian byte order.
+// These  functions convert the byte encoding of integer values from the byte order that the current CPU (the "host") uses, 
+// to and from little-endian and big-endian byte order.
 #include <endian.h>
 uint16_t htobe16(uint16_t host_16bits);
 uint16_t htole16(uint16_t host_16bits);
