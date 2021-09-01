@@ -26,9 +26,17 @@
 
 ## Endian Conversion Functions
 
+我们把某个给定系统所用的字节序称为**主机字节序**（host byte order），网络协议为**网络字节序**（network byte order）（大端字节序）。
+
+**网络字节序是大端字节序**。
+
+
+
 ## Linux
 
+下面4个函数是主机字节序和网络字节序之间相互转换的函数。在这些函数的名字中，h代表host，n代表network，s代表short，l代表long。short和long这两个称谓是出自4.2BSD的Digital VAX实现的历史产物。如今我们应该把s视为一个16位的值（例如TCP或UDP端口号），把l视为一个32位的值（例如IPv4地址）。事实上即使在64位的Digital Alpha中，尽管长整数占用64位，htonl和ntohl函数操作的仍然是32位的值。 
 
+**当使用这些函数时，我们并不关心主机字节序和网络字节序的真实值（或为大端，或为小端）。我们所要做的只是调用适当的函数在主机和网络字节序之间转换某个给定值。在那些与网际协议所用字节序（大端）相同的系统中，这四个函数通常被定义为空宏**。
 
 ```cpp
 // converts host byte order and network byte order
@@ -40,6 +48,8 @@ uint16_t ntohs(uint16_t netshort);
 ```
 
 
+
+These  functions convert the byte encoding of integer values from the byte order that the current CPU(the "host") uses, to and from little-endian and big-endian byte order.
 
 ```cpp
 // These  functions convert the byte encoding of integer values from the byte order that the current CPU (the "host") uses, 
@@ -65,11 +75,13 @@ uint64_t le64toh(uint64_t little_endian_64bits);
 
 ## Boost
 
-
+[Boost.Endian: The Boost Endian Library - 1.77.0](https://www.boost.org/doc/libs/1_77_0/libs/endian/doc/html/endian.html)
 
 
 
 > ## *References*
+>
+> [byteorder(3) - Linux manual page (man7.org)](https://man7.org/linux/man-pages/man3/htonl.3.html)
 >
 > [endian(3) - Linux manual page (man7.org)](https://man7.org/linux/man-pages/man3/endian.3.html)
 >
