@@ -23,8 +23,10 @@ int main()
 }
 
 // Tips:
-//	1. IPv4地址和TCP或UDP端口号在套接字地址结构中总是以网络字节序来存储
-//	2. 应该优先使用inet_pton和inet_ntop，避免使用这3个函数：inet_aton和inet_ntoa已过时，inet_addr存在缺陷
+//	1. IPv4地址和TCP或UDP端口号在套接字地址结构中总是以网络字节序来存储。
+//	2. int inet_pton(int af, const char *src, void *dst);	tips: dst is written in network byte order.
+//	3. inet_pton和inet_ntop函数名中p和n分别代表表达（presentation）和数值（numeric）。
+//	4. 应该优先使用inet_pton和inet_ntop，避免使用这3个函数：inet_aton和inet_ntoa已过时，inet_addr存在缺陷。
 
 /* Possible outputs:
 205.188.146.23
