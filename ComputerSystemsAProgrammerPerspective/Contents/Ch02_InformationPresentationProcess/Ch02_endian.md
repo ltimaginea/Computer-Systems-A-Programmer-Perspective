@@ -18,9 +18,9 @@
 
 
 
-![](https://github.com/ltimaginea/Computer-Systems-A-Programmer-Perspective/blob/main/ComputerSystemsAProgrammerPerspective/Images/Ch02_InformationPresentationProcess/endian0.png)
+![endian0.png](../../Images/Ch02_InformationPresentationProcess/endian0.png)
 
-![](https://github.com/ltimaginea/Computer-Systems-A-Programmer-Perspective/blob/main/ComputerSystemsAProgrammerPerspective/Images/Ch02_InformationPresentationProcess/endian1.png)
+![endian1.png](../../Images/Ch02_InformationPresentationProcess/endian1.png)
 
 
 
