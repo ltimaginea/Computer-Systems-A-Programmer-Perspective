@@ -80,6 +80,7 @@ Type "quit" on GDB prompt to exit GDB.
 - [GNU操作系统和自由软件运动](https://www.gnu.org/)
 - [GDB调试 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/272083977)
 - [Home · google/sanitizers Wiki · GitHub](https://github.com/google/sanitizers/wiki)
+- [-fsanitize=address   -fsanitize=leak   (GCC Instrumentation Options)](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 - [The Valgrind Quick Start Guide](https://valgrind.org/docs/manual/quick-start.html)
 - [AddressSanitizer (ASan) for the Linux Workload in Visual Studio 2019 - C++ Team Blog (microsoft.com)](https://devblogs.microsoft.com/cppblog/addresssanitizer-asan-for-the-linux-workload-in-visual-studio-2019/)
 
