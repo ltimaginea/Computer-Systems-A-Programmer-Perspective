@@ -22,7 +22,7 @@ GDB can be used in two ways:
 1. To Debug running program having logical error, crashing or hanging.
 2. To Debug coredump of pogram generated automatically when program crashes.
 
-We will see first way to debug live/running program using GDB in this tutorial. Below steps will guide how to run program with GDB.
+You will see first way to debug live/running program using GDB in this tutorial. Below steps will guide how to run program with GDB.
 
 **Step 1:** Compile and Build program with debugging symbols:
 
