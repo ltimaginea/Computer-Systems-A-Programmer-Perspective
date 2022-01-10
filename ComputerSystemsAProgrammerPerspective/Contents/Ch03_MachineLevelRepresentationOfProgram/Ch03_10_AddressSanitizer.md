@@ -28,9 +28,7 @@ g++ -fsanitize=address -O1 -fno-omit-frame-pointer -g ./main.cpp
 
 If you want to run an ASan-instrumented program without leak detection, you can pass `detect_leaks=0` in the `ASAN_OPTIONS` environment variable.
 
-If you just need leak detection, and don't want to bear the ASan slowdown, you can build with `-fsanitize=leak` instead of `-fsanitize=address`. This will link your program against a runtime library containing just the bare necessities required for LeakSanitizer to work. No compile-time instrumentation will be applied.
-
-Be aware that the stand-alone mode is less well tested compared to running LSan on top of ASan. 
+If you just need leak detection, and don't want to bear the ASan slowdown, you can build with `-fsanitize=leak` instead of `-fsanitize=address`. This will link your program against a runtime library containing just the bare necessities required for LeakSanitizer to work. No compile-time instrumentation will be applied. Be aware that the stand-alone mode is less well tested compared to running LSan on top of ASan. 
 
 Note: LeakSanitizer does not work with gdb, See [LeakSanitizer does not work with gdb - fatal error of asan when executable has no issues · Issue #857 · google/sanitizers · GitHub](https://github.com/google/sanitizers/issues/857) . 
 
