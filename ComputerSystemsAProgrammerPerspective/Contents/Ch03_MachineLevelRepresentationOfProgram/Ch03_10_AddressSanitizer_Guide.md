@@ -1,4 +1,4 @@
-# AddressSanitizer
+# AddressSanitizer Guide
 
 ## Introduction
 
