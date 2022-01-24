@@ -19,10 +19,13 @@ This tool is very fast. The average slowdown of the instrumented program is ~2x 
 
 In order to use [AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer) you will need to compile and link your program using `g++` with the `-fsanitize=address` switch. To get a reasonable performance add `-O1` or higher. To get nicer stack traces in error messages add `-fno-omit-frame-pointer`. 
 
+```shell
+g++ -fsanitize=address -fno-omit-frame-pointer -g ./main.cpp
+```
+
 Now, run the executable. [AddressSanitizerCallStack](https://github.com/google/sanitizers/wiki/AddressSanitizerCallStack) page describes how to obtain symbolized stack traces.
 
 ```shell
-g++ -fsanitize=address -O1 -fno-omit-frame-pointer -g ./main.cpp
 ./a.out
 ```
 
